@@ -1,0 +1,109 @@
+body {
+    background-color: hsl(218, 23%, 16%);
+    margin: 0;
+}
+
+.mainDiv {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    max-width: 90%;
+    width: 40rem;
+    min-height: 250px;
+    margin-bottom: 25px;
+    background-color:hsl(217, 19%, 24%);
+    border-radius: 10px;
+}
+p {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.adviceDiv {
+    text-align: center;
+    margin: 0;
+}
+
+#advId {
+    color: hsl(150, 100%, 66%);
+    margin: 0;
+    letter-spacing: 5px;
+    font-size: 15px;
+    padding: 35px;
+}
+
+#advMain {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    margin: 0;
+    padding: 10px 30px 40px 30px;
+}
+
+#adviceBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(150, 100%, 66%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: none;
+    transition: 250ms ease-in-out;
+    transform: translateY(37.5px);
+}
+
+.dice-icon {
+    width: 28px;
+}
+
+#adviceBtn:hover {
+    box-shadow: 0 0 30px hsl(150, 100%, 66%);
+
+}
+
+hr {
+    overflow: visible;
+    border: 0;
+    height: 1px;
+    background-color:hsl(193, 38%, 86%);
+    width: 80%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+hr::after {
+    content: "··";
+    font-size: 50px;
+    color: hsl(193, 38%, 86%);
+    display: inline-block;
+    position: relative;
+    background-color: hsl(217, 19%, 24%);
+    top: -0.56em;
+    padding: 0 0.25em;
+}
+
+.divider {
+    content: url(./images/pattern-divider-mobile.svg);
+    max-width: 88%;
+    height: auto;
+}
+
+@media screen and (min-width: 375px) {
+    .divider {
+        content: url(./images/pattern-divider-desktop.svg);
+        min-width: 88%;
+        height: auto;
+    }
+}
+
+.attribution {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
